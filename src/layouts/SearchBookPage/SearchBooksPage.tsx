@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import BookModel from '../../models/BookModel';
 import { SpinnerLoading } from '../utils/SpinnerLoading';
+import { SearchBook } from './components/SearchBook';
 
 
 
