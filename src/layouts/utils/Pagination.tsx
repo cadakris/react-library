@@ -1,5 +1,3 @@
-import { Navbar } from "../NavbarAndFooter/Navbar";
-
 export const Pagination: React.FC<{
     currentPage: number,
     totalPages: number,
