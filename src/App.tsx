@@ -4,7 +4,7 @@ import { Navbar } from './layouts/NavbarAndFooter/Navbar';
 import { Footer } from './layouts/NavbarAndFooter/Footer';
 import { HomePage } from './layouts/HomePage/HomePage';
 import { SearchBooksPage } from "./layouts/SearchBookPage/SearchBooksPage";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 
 export const App = () => {
@@ -12,9 +12,10 @@ export const App = () => {
     <>
       <div>
         <Navbar/>
-        <Routes>
 
-        <Route exact path='/'>
+        <Switch>
+
+        <Route path='/' exact>
           <HomePage/>
         </Route>
 
@@ -26,7 +27,7 @@ export const App = () => {
           <SearchBooksPage/>
         </Route>
 
-        </Routes>
+        </Switch>
 
         <Footer />
       </div>
