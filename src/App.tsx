@@ -11,29 +11,32 @@ import { BookCheckoutPage } from './layouts/BookCheckoutPage/BookCheckoutPage';
 export const App = () => {
   return (
     <>
-      <div>
+      <div className='d-flex flex-column min-vh-100'>
         <Navbar/>
 
-        <Switch>
+        <div className='flex-grow-1'>
+        < Switch>
 
-        <Route path='/' exact>
-          <HomePage/>
-        </Route>
+            <Route path='/' exact>
+              <HomePage/>
+            </Route>
 
-        <Route path='/home'>
-          <HomePage/>
-        </Route>
+            <Route path='/home'>
+              <HomePage/>
+            </Route>
 
-        <Route path='/search'>
-          <SearchBooksPage/>
-        </Route>
+            <Route path='/search'>
+              <SearchBooksPage/>
+            </Route>
 
-        <Route path='/checkout/:bookId'>
-          <BookCheckoutPage/>
-        </Route>
+            <Route path='/checkout/:bookId'>
+              <BookCheckoutPage/>
+            </Route>
 
-        </Switch>
+            </Switch>
 
+        </div>
+        
         <Footer />
       </div>
     </>
